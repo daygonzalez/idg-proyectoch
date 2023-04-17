@@ -1,0 +1,569 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/fondoPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*HEADER*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    opacity:0.7;
+}
+
+.titulo-header {
+    color: rgb(0, 255, 255);
+}
+
+/*Icono que se muestra en mobile*/
+.icono__header {
+    font-size: 20px;
+    display: none;
+    color: rgb(240, 255, 255);
+}
+.icono__header:hover{
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+}
+
+/*Lista de navegacion*/
+.lista_nav {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.listaNav__item {
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.enlace_header {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(240, 255, 255);
+}
+
+.enlace_header:hover {
+    color: rgb(0, 255, 255);
+    text-shadow: 1px 2px 1px gray;
+    text-decoration: none;
+}
+
+.icono_menu {
+    text-decoration: none;
+}
+
+/*Icono que cerrará el menu en formato mobile/tablet*/
+.listaNav__item-oculto {
+    display: none;
+}
+
+/*MAIN INICIO*/
+
+.conteiner__index {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: rgb(240, 255, 255);
+}
+
+.section1_index {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.section1_index__titulo {
+    width: 50%;
+    font-size: 25px;
+    padding: 20px;
+    text-align:center;
+}
+
+.soluciones-integrales {
+    font-size: 50px;
+    color: rgb(255, 159, 41)   
+}
+
+.section1_index__parrafo {
+    width: 50%;
+    font-size: 25px;
+    padding: 20px;
+}
+
+/*Sección 2: tipo de servicios*/
+
+.section2_index {
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "aplicaciones monitoreo seguridad";
+}
+
+/*Esto iba antes del grid  
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items:center;
+    padding: 30px;*/
+
+.aplicaciones {
+    grid-area: aplicaciones;
+    padding: 10px;
+}
+
+.monitoreo {
+    grid-area: monitoreo;
+    padding: 10px;
+}
+
+.seguridad {
+    grid-area: seguridad;
+    padding: 10px;
+}
+
+/*Esto iba antes del grid
+.section2_index--card {
+    width: 33%;
+    margin-top: 5rem;
+    text-align: justify;
+    padding: 0 20px;}*/
+
+.index__card-titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(255, 159, 41) 
+}
+
+/*MAIN NOSOTROS*/
+
+.conteiner__about {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(240, 255, 255);
+}
+
+/*Sección 1: Quienes somos*/
+.section__about1 {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.tituloAbout {
+    margin: 1rem;
+    color: rgb(255, 159, 41);
+}
+
+/*Sección 2: misión, visión y valores*/
+
+.section__about2 {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section__about2--card {
+    padding: 2rem 1rem;
+    margin: 1px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/*MAIN SERVICIOS*/
+
+.section__services {
+    width: 100%;
+    margin-top: 100px;
+    display: grid;
+    padding-left: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "servicio1 servicio2"
+    "servicio3 servicio4";
+    justify-items: center;
+}
+/*Lo que iba como Flex:
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;*/
+
+.item__services1 {
+    grid-area: servicio1;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item__services2 {
+    grid-area: servicio2;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item__services3 {
+    grid-area: servicio3;
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.item__services4 {
+    grid-area: servicio4;
+    padding: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen__servicio {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+/*MAIN CLIENTES*/
+
+.container__client {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+/*Seccion 1: texto e imagen*/
+
+.section1__clientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.div-section1 {
+    width: 45%;
+    text-align: center;
+}
+
+.titulo__clientes {
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: rgb(255, 159, 41) 
+}
+
+.parrafo__clientes {
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.section1__img {
+    width: 400px;
+    height: 300px;
+    border-radius: 1rem;
+}
+
+/*Seccion 2: clientes*/
+
+.section2__clientes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    padding-left: 25px;
+}
+.div-section2 {
+    padding: 10px;
+}
+.subtitulo__cliente {
+    color: rgb(255, 159, 41)
+}
+.div-img__section2 {
+    text-align: center;
+}
+
+.img__section2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/*MAIN CONTACTO*/
+
+.conteiner__contact {
+    width: 100%;
+    margin-top: 100px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Sección 1: mapa y formulario*/
+
+.section1__contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section1__mapa, .section1__form {
+    height: 500px;
+    width: 605px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.subtitulo__mapa, .subtitulo__form {
+    color: rgb(255, 159, 41);
+    padding: 6px;
+}
+
+.iframe__mapa {
+    padding: 0 1px 0 6px;
+    border-radius: 10px;
+}
+
+.form__contacto {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin: 2px 0px 0px 6px;
+    color: rgb(0, 255, 255);
+}
+
+.item__form {
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+}
+.imput__form {
+    border-radius: 5px;
+    height: 30px;
+    padding-top: 2px;
+}
+
+.label__textarea--form {
+    padding-bottom: 2px;
+}
+.textarea__form {
+    border-radius: 5px;
+    height: 120px;
+    padding-bottom: 0;
+}
+.item__buttom {
+    align-items: flex-end;
+}
+.button__form {
+    border-radius: 5px;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+}
+
+/*Sección 2: teléfonos, mail y redes*/
+
+.section2__contacto {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.lista__contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+.item_lista {
+    padding: 5px;
+}
+.item_a-lista {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    height: 3rem;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(0, 255, 255);
+    font-size: 10px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    opacity:0.7;
+}
+
+/*Vista Tablet*/
+
+@media  screen and (max-width:1023px) {
+    
+}
+
+/*Vista Mobile*/
+
+@media  screen and (max-width:599px) {
+    
+    /*Navegacion*/
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        opacity: 1;
+    }
+    .titulo-header {
+        font-size: 30px;
+    }
+    .nav {
+        display: none;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000000;
+        width: 100%;
+        height: 100vh;
+    }
+    .lista_nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height: 100%;
+    }
+    .icono__header {
+        display: block;
+        text-decoration: none;
+    }
+
+    .enlace_header {
+        text-decoration: none;
+    }
+
+    .nav:target {
+        display: block;
+    }
+    .listaNav__item-oculto {
+        display: block;
+    }
+
+    /*Main general*/
+
+    .conteiner__index {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        color: rgb(240, 255, 255);
+    }
+
+    .section1_index {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+    
+    .section1_index__titulo {
+        width: 50%;
+        font-size: 15px;
+        padding: 1px;
+        text-align:justify;
+    }
+    
+    .soluciones-integrales {
+        font-size: 25px;
+        color: rgb(255, 159, 41)   
+    }
+    
+    .section1_index__parrafo {
+        width: 50%;
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    .section2_index {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .footer {
+        width: 100%;
+        font-size: 5px;
+    }
+}

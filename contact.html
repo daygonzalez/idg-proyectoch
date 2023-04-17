@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/engranaje.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+        
+    <!--Estilo de fuente principal-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=The+Nautigal:wght@700&display=swap"
+    rel="stylesheet">
+            
+    <!--Libreria de iconos-->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div><h1 class="titulo-header">idg-Soluciones</h1></div>
+
+        <a href="#abrirMenu"> <span class="jam jam-menu icono__header"></span></a>
+
+        <div>
+            <nav class="nav" id="abrirMenu">
+                <ul class="lista_nav">
+    
+                    <li class="listaNav__item"><a href="../index.html" class="enlace_header">Inicio</a></li>
+                    <li class="listaNav__item"><a href="./aboutus.html" class="enlace_header">Nosotros</a></li>
+                    <li class="listaNav__item"><a href="./services.html" class="enlace_header">Servicios</a></li>
+                    <li class="listaNav__item"><a href="./client.html" class="enlace_header">Clientes</a></li>
+                    <li class="listaNav__item"><a href="./contact.html" class="enlace_header">Contacto</a></li>
+                    <li class="listaNav__item listaNav__item-oculto"><a href="#cerrado" class="enlace_header"><span class="jam jam-close"></span></a></li>
+    
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="conteiner__contact">
+
+        <section class="section1__contacto">
+
+            <div class="section1__mapa">
+                <h2 class="subtitulo__mapa">Cómo llegar:</h2>
+                <iframe class="iframe__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.4795841951104!2d-64.16672298497734!3d-31.45599108139093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a324048df655%3A0x8873929b6204703!2zSmFyZMOtbiBkZWwgU3VkLCBDw7NyZG9iYQ!5e0!3m2!1ses!2sar!4v1656274242276!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="section1__form">
+
+                <h2 class="subtitulo__form">Te contactamos</h2>
+
+                <form class="form__contacto">
+
+                    <div class="item__form">
+                        <label for="nombre">Nombre:</label>
+                        <input class="imput__form" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                    </div>
+    
+                    <div class="item__form">
+                        <label for="apellido">Apellido:</label>
+                        <input class="imput__form" type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+                    </div>
+    
+                    <div class="item__form">
+                        <label for="email">Email:</label>
+                        <input class="imput__form" type="email" id="email" name="email" placeholder="Ingrese su email" required>
+                    </div>
+    
+                    <div class="item__form">
+                        <label for="telefono">Teléfono:</label>
+                        <input class="imput__form" type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono" required>
+                    </div>
+    
+                    <div class="item__form">
+                        <label class="label__textarea--form" for="mensaje">Mensaje:</label>
+                        <textarea class="textarea__form" name="mensaje" id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Escriba su consulta o comentario aquí."></textarea>
+                    </div>
+    
+                    <div class="item__form item__buttom">
+                        <button class="button__form">Enviar</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <section class="section2__contacto">
+
+            <ul class="lista__contacto">
+                <li class="item_lista"><span class="jam jam-viber"></span> Teléfonos: 0321-154857623</li>
+                <li class="item_lista"><span class="jam jam-envelope"></span> E-mail: empresa@mail.com.ar</li>
+                <li><a class="item_lista item_a-lista" href="./soloPrueba.html" target="_blank"><span class="jam jam-instagram"></span> Instagram</a></li>
+                <li><a class="item_lista item_a-lista" href="./soloPrueba.html" target="_blank"> <span class="jam jam-github"></span> Github</a></li>
+                <li><a class="item_lista item_a-lista" href="./soloPrueba.html" target="_blank"><span class="jam jam-facebook-circle"></span> Facebook</a></li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <h3> idg-Soluciones 2022 &copy; Derechos reservados.</h3>
+        </div>
+    </footer>
+
+</body>
+
+</html>
